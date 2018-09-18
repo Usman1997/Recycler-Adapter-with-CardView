@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_no"
+                android:layout_toRightOf="@+id/product_image"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/heading_size"
+                android:text="Order # 39239402"
+                android:textColor="@color/heading_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_desc"
+                android:layout_toRightOf="@+id/product_image"
+                android:layout_below="@+id/order_no"
+                android:text="@string/dummy_desc"
+                android:textSize="@dimen/secondary_text_size"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/secondary_text_color"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_desc"
+                android:layout_toRightOf="@id/product_image">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:text="@string/dummy_date"
+                    android:textSize="@dimen/primary_text_size"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:text="@string/dummy_time"
+                    android:textSize="@dimen/primary_text_size"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/date"
+                    android:layout_marginLeft="5dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

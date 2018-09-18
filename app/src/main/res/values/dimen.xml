@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="secondary_text_size">11dp</dimen>
+    <dimen name="primary_text_size">9dp</dimen>
+    <dimen name="heading_size">13dp</dimen>
+</resources>
